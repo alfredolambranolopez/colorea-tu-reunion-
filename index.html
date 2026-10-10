@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColoreaLaReunión™ | Libros para Colorear Anti-Reuniones Aburridas</title>
+  <meta name="description" content="Libros para colorear para gente del trabajo atrapada en reuniones eternas. Porque esa reunión definitivamente pudo haber sido un correo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BANNER SUPERIOR DE AVISO / CUPÓN -->
+  <aside class="top-announcement-bar" role="banner">
+    <div class="announcement-content">
+      <span class="badge-flash">🔥 SALVAVIDAS CORPORATIVO</span>
+      <span>Usa el código <strong>PUDOSERUNCORREO</strong> para <strong>20% de descuento</strong> y descarga en PDF para imprimir con tinta de la empresa.</span>
+      <button class="btn-copy-code" id="btnCopyCoupon" title="Copiar cupón">Copiar Cupón</button>
+    </div>
+  </aside>
+
+  <!-- NAVEGACIÓN -->
+  <header class="main-header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo" aria-label="Inicio ColoreaLaReunión">
+        <div class="brand-icon">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect width="40" height="40" rx="10" fill="#FFE55B" />
+            <path d="M10 28L13 14L26 27L10 28Z" fill="#FF4757" />
+            <path d="M13 14L22 5L35 18L26 27L13 14Z" fill="#2ED573" />
+            <circle cx="28" cy="12" r="3" fill="#2F3542" />
+            <path d="M9 31C13 30 15 33 21 31" stroke="#2F3542" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ColoreaLaReunión<span class="accent-dot">.</span></span>
+          <span class="brand-tagline">Terapia gráfica para juntas de Zoom</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="mainNav">
+        <a href="#catalogo" class="nav-item">📚 Catálogo</a>
+        <a href="#simulador" class="nav-item">🎨 Colorear en Vivo</a>
+        <a href="#calculadora" class="nav-item">⏱️ Calculadora de Aburrimiento</a>
+        <a href="#opiniones" class="nav-item">⭐ Testimonios</a>
+        <a href="#faq" class="nav-item">❓ Preguntas</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- BOTÓN DE MODO PÁNICO / JEFE A LA VISTA -->
+        <button class="btn-panic-nav" id="btnTriggerPanicNav" title="Presiona si viene tu jefe o presiona ESC en tu teclado">
+          <span class="panic-icon">🚨</span>
+          <span class="panic-text">¡Viene mi jefe! <kbd class="kbd-badge">ESC</kbd></span>
+        </button>
+
+        <!-- BOTÓN DEL CARRITO -->
+        <button class="btn-cart-toggle" id="btnCartToggle" aria-label="Abrir carrito de compras">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count-badge" id="cartCountBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-stickers">
+          <span class="sticker sticker-fun">💤 "Sincronicemos 5 minutos"</span>
+          <span class="sticker sticker-alert">☕ Dosis de sarcasmo garantizada</span>
+        </div>
+
+        <h1 class="hero-title">
+          Esta reunión pudo haber sido un correo.<br>
+          <span class="highlight-creative">Mejor conviértela en tu obra de arte.</span>
+        </h1>
+
+        <p class="hero-description">
+          Libros de mandalas y garabatos pasivo-agresivos diseñados con precisión científica para mantener contacto visual con tu jefe, asentir cada 30 segundos y <strong>salvar tu salud mental</strong> sin ser despedido.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#catalogo" class="btn btn-primary btn-bounce">
+            <span>Explorar Libros Anti-Estrés</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#simulador" class="btn btn-secondary">
+            <span>🎨 Probar Lienzo Interactivo Ahora</span>
+          </a>
+        </div>
+
+        <div class="social-proof-bar">
+          <div class="avatars-group">
+            <span class="avatar-face face-1">🥱</span>
+            <span class="avatar-face face-2">🤫</span>
+            <span class="avatar-face face-3">🎨</span>
+            <span class="avatar-face face-4">🐱</span>
+          </div>
+          <div class="proof-text">
+            <strong>+14,800 reuniones sobrevividas</strong> en Teams, Zoom y Google Meet.
+            <div class="stars">★★★★★ <span>4.9/5 por adictos al 'Mute'</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISUAL HERO INTERACTIVO / MOCKUP -->
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="book-card-hero">
+            <div class="hero-book-badge">#1 Bestseller Corporativo</div>
+            <div class="hero-book-cover">
+              <div class="cover-header">
+                <span class="cover-subtitle">EDICIÓN EJECUTIVA DE SUPERVIVENCIA</span>
+                <h3 class="cover-main-title">PUDO HABER SIDO UN CORREO</h3>
+                <p class="cover-mini-desc">50 Mandalas para colorear mientras finges que tomas notas en la libreta</p>
+              </div>
+              <div class="cover-illustration">
+                <svg viewBox="0 0 200 160" width="100%" height="100%">
+                  <!-- Cat with glasses nodding at laptop -->
+                  <circle cx="100" cy="80" r="55" fill="#FFE55B" stroke="#1E272E" stroke-width="3" />
+                  <!-- Ears -->
+                  <polygon points="60,40 80,10 95,35" fill="#FF6B81" stroke="#1E272E" stroke-width="3"/>
+                  <polygon points="140,40 120,10 105,35" fill="#FF6B81" stroke="#1E272E" stroke-width="3"/>
+                  <!-- Glasses -->
+                  <circle cx="85" cy="75" r="14" fill="#ffffff" stroke="#1E272E" stroke-width="3"/>
+                  <circle cx="115" cy="75" r="14" fill="#ffffff" stroke="#1E272E" stroke-width="3"/>
+                  <line x1="99" y1="75" x2="101" y2="75" stroke="#1E272E" stroke-width="3"/>
+                  <circle cx="85" cy="75" r="5" fill="#1E272E"/>
+                  <circle cx="115" cy="75" r="5" fill="#1E272E"/>
+                  <!-- Tie -->
+                  <polygon points="95,115 105,115 108,145 100,155 92,145" fill="#FF4757" stroke="#1E272E" stroke-width="2.5"/>
+                  <text x="100" y="105" text-anchor="middle" font-family="'Caveat', cursive" font-size="14" font-weight="bold" fill="#1E272E">"Alineando expectativas..."</text>
+                </svg>
+              </div>
+              <div class="cover-footer">
+                <span class="tag-pill">Papel Anti-Traspaso 160g</span>
+                <span class="tag-pill">Apto para Plumones</span>
+              </div>
+            </div>
+            
+            <div class="floating-sticky sticky-1">
+              📌 "Mi jefe cree que escribo la minuta... ¡Ya voy por la página 12!"
+            </div>
+            <div class="floating-sticky sticky-2">
+              🤫 <em>Cámara apagada, lápiz encendido.</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE BENEFICIOS / CÓMICOS -->
+  <section class="perks-strip">
+    <div class="container perks-grid">
+      <div class="perk-item">
+        <span class="perk-icon">🛡️</span>
+        <div>
+          <h4>100% Inmune a Despidos</h4>
+          <p>Desde lejos parece un cuaderno de notas ultrasecreto de finanzas.</p>
+        </div>
+      </div>
+      <div class="perk-item">
+        <span class="perk-icon">🖨️</span>
+        <div>
+          <h4>PDF Inmediato para Imprimir</h4>
+          <p>Descárgalo en 2 segundos e imprímelo con el tóner ilimitado de la empresa.</p>
+        </div>
+      </div>
+      <div class="perk-item">
+        <span class="perk-icon">🧠</span>
+        <div>
+          <h4>Baja tu Cortisol en un 80%</h4>
+          <p>Comprobado: rellenar mandalas de 'Micromanagement' reduce las ganas de gritar.</p>
+        </div>
+      </div>
+      <div class="perk-item">
+        <span class="perk-icon">📦</span>
+        <div>
+          <h4>Empaque Ultra Discreto</h4>
+          <p>Envíos físicos camuflados como 'Auditoría Fiscal Anual'.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIENZO INTERACTIVO PARA COLOREAR EN VIVO -->
+  <section class="interactive-sandbox" id="simulador">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">🎮 PRUÉBALO EN TU NAVEGADOR</span>
+        <h2 class="section-title">El Desahogador 3000: Simulador de Colorear en Vivo</h2>
+        <p class="section-subtitle">
+          ¿Estás en una videollamada aburrida justo ahora? Haz clic en los colores de la paleta y rellena las áreas del dibujo. ¡Es relajante, adictivo y seguro!
+        </p>
+      </div>
+
+      <div class="coloring-app-card">
+        <!-- BARRA SUPERIOR DE HERRAMIENTAS -->
+        <div class="app-toolbar">
+          <div class="sheet-selector-group">
+            <label for="drawingSelect"><strong>Lámina actual:</strong></label>
+            <select id="drawingSelect" class="form-select">
+              <option value="correo">✉️ Lámina 1: "Pudo haber sido un correo"</option>
+              <option value="gatito">🐱 Lámina 2: "Gato fingiendo que asiente en Teams"</option>
+              <option value="sinergia">📊 Lámina 3: "Gráfico de Sinergias Inútiles"</option>
+            </select>
+          </div>
+
+          <div class="canvas-actions">
+            <button class="tool-btn" id="btnUndoColor" title="Deshacer último trazo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
+              <span>Deshacer</span>
+            </button>
+            <button class="tool-btn" id="btnClearCanvas" title="Reiniciar lámina en blanco">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              <span>Limpiar</span>
+            </button>
+            <button class="tool-btn primary" id="btnDownloadArt" title="Descargar dibujo pintado">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Descargar Mi Obra</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="canvas-workspace">
+          <!-- PALETA DE COLORES CORPORATIVOS -->
+          <div class="color-palette-sidebar">
+            <div class="palette-title">
+              <span>🎨 Paleta de Oficina</span>
+              <small>Haz clic para elegir color:</small>
+            </div>
+            <div class="swatches-grid" id="swatchesContainer">
+              <!-- Se generarán dinámicamente con JS o estáticos con datos humorísticos -->
+              <button class="swatch-btn active" data-color="#FFE600" data-name="Resaltador Amarillo Tóxico" style="--swatch:#FFE600"></button>
+              <button class="swatch-btn" data-color="#FF4757" data-name="Alerta de Burnout (Rojo)" style="--swatch:#FF4757"></button>
+              <button class="swatch-btn" data-color="#2ED573" data-name="Verde 'Día de Quincena'" style="--swatch:#2ED573"></button>
+              <button class="swatch-btn" data-color="#1E90FF" data-name="Azul 'Pantalla de la Muerte'" style="--swatch:#1E90FF"></button>
+              <button class="swatch-btn" data-color="#5B5FDE" data-name="Púrpura Botón de Teams" style="--swatch:#5B5FDE"></button>
+              <button class="swatch-btn" data-color="#FFA502" data-name="Naranja Café Hirviendo" style="--swatch:#FFA502"></button>
+              <button class="swatch-btn" data-color="#FF6B81" data-name="Rosa 'Ganas de Renunciar'" style="--swatch:#FF6B81"></button>
+              <button class="swatch-btn" data-color="#70A1FF" data-name="Cielo Post-Renuncia" style="--swatch:#70A1FF"></button>
+              <button class="swatch-btn" data-color="#2F3542" data-name="Tinta de Pluma Ejecutiva" style="--swatch:#2F3542"></button>
+              <button class="swatch-btn" data-color="#A4B0BE" data-name="Gris Cubículo Depresivo" style="--swatch:#A4B0BE"></button>
+              <button class="swatch-btn" data-color="#FFFFFF" data-name="Blanco Hoja en Blanco (Borrador)" style="--swatch:#FFFFFF"></button>
+              <button class="swatch-btn" data-color="#8E44AD" data-name="Morado Sinergia Cósmica" style="--swatch:#8E44AD"></button>
+            </div>
+            
+            <div class="active-color-card">
+              <span class="active-color-indicator" id="activeColorIndicator"></span>
+              <div class="active-color-meta">
+                <span class="color-label">Color activo:</span>
+                <strong id="activeColorName">Resaltador Amarillo Tóxico</strong>
+              </div>
+            </div>
+
+            <!-- SOUNDBOARD MINI EASTER EGG -->
+            <div class="mini-soundboard">
+              <span class="sound-title">🔊 Efectos de Camuflaje:</span>
+              <div class="sound-btns-grid">
+                <button class="btn-sound-fx" data-sound="clack" title="Finge que escribes furiosamente en el teclado">⌨️ Teclado</button>
+                <button class="btn-sound-fx" data-sound="cough" title="Finge que toses para mutear el micrófono">🤧 Falsa Tos</button>
+                <button class="btn-sound-fx" data-sound="slurp" title="Sonido de sorbo reflexivo de café">☕ Café</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ÁREA DEL DIBUJO SVG COLORABLE -->
+          <div class="canvas-art-board" id="artBoardContainer">
+            <!-- El SVG activo se inyecta o conmuta aquí -->
+            <div class="svg-stage" id="svgStage">
+              <!-- SVG 1: PUDO SER UN CORREO -->
+              <svg id="svgDrawingCorreo" class="interactive-svg active" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Marco exterior -->
+                <rect class="colorable" data-id="bg" x="15" y="15" width="570" height="470" rx="15" fill="#FAFAFA" stroke="#222" stroke-width="4"/>
+                <rect class="colorable" data-id="border-inner" x="30" y="30" width="540" height="440" rx="10" fill="#FFFFFF" stroke="#222" stroke-width="2" stroke-dasharray="8,6"/>
+                
+                <!-- Mandalas en las esquinas -->
+                <circle class="colorable" data-id="corner1" cx="60" cy="60" r="22" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                <circle class="colorable" data-id="corner2" cx="540" cy="60" r="22" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                <circle class="colorable" data-id="corner3" cx="60" cy="440" r="22" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                <circle class="colorable" data-id="corner4" cx="540" cy="440" r="22" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+
+                <!-- Mandalas de flores/engranajes de fondo -->
+                <g transform="translate(100, 150)">
+                  <path class="colorable" data-id="fl-1" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <path class="colorable" data-id="fl-2" transform="rotate(45)" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <path class="colorable" data-id="fl-3" transform="rotate(90)" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <path class="colorable" data-id="fl-4" transform="rotate(135)" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <circle class="colorable" data-id="fl-center" cx="0" cy="0" r="16" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                </g>
+
+                <g transform="translate(500, 150)">
+                  <path class="colorable" data-id="fr-1" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <path class="colorable" data-id="fr-2" transform="rotate(45)" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <path class="colorable" data-id="fr-3" transform="rotate(90)" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <path class="colorable" data-id="fr-4" transform="rotate(135)" d="M0 -35 C15 -35 25 -20 25 0 C25 20 15 35 0 35 C-15 35 -25 20 -25 0 C-25 -20 -15 -35 0 -35 Z" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <circle class="colorable" data-id="fr-center" cx="0" cy="0" r="16" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                </g>
+
+                <!-- Taza de café humeante grande -->
+                <g transform="translate(300, 150)">
+                  <path class="colorable" data-id="coffee-smoke1" d="M -15 -80 Q -30 -100 -10 -120" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+                  <path class="colorable" data-id="coffee-smoke2" d="M 0 -85 Q 20 -105 5 -125" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+                  <path class="colorable" data-id="coffee-smoke3" d="M 15 -80 Q -5 -100 15 -120" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+                  
+                  <!-- Asa de la taza -->
+                  <path class="colorable" data-id="mug-handle" d="M 45 -45 C 80 -45 80 15 45 15" fill="#FFFFFF" stroke="#222" stroke-width="4"/>
+                  <!-- Cuerpo de la taza -->
+                  <path class="colorable" data-id="mug-body" d="M -50 -60 L 50 -60 L 40 30 C 40 45 -40 45 -40 30 Z" fill="#FFFFFF" stroke="#222" stroke-width="4"/>
+                  <!-- Franja decorativa de la taza -->
+                  <path class="colorable" data-id="mug-stripe" d="M -46 -25 L 46 -25 L 43 0 L -43 0 Z" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                  <!-- Plato de café -->
+                  <ellipse class="colorable" data-id="mug-plate" cx="0" cy="38" rx="65" ry="12" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <!-- Logo de café -->
+                  <circle class="colorable" data-id="mug-badge" cx="0" cy="-12" r="10" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                </g>
+
+                <!-- Gran Letrero Central Estilo Mandala Lettering -->
+                <g transform="translate(300, 290)">
+                  <!-- Cinta de fondo -->
+                  <path class="colorable" data-id="ribbon-bg" d="M -230 -40 L 230 -40 L 210 30 L -210 30 Z" fill="#FFFFFF" stroke="#222" stroke-width="4"/>
+                  <polygon class="colorable" data-id="ribbon-tail-l" points="-230,-40 -255,-10 -210,30" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                  <polygon class="colorable" data-id="ribbon-tail-r" points="230,-40 255,-10 210,30" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                  <text x="0" y="5" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="900" font-size="34" fill="#222" letter-spacing="2">PUDO HABER SIDO UN CORREO</text>
+                </g>
+
+                <!-- Burbujas y elementos decorativos inferiores -->
+                <g transform="translate(300, 390)">
+                  <rect class="colorable" data-id="box-left" x="-220" y="-30" width="130" height="60" rx="8" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                  <text x="-155" y="7" text-anchor="middle" font-family="'Caveat', cursive" font-weight="bold" font-size="22" fill="#222">"Alineando alfas..."</text>
+
+                  <rect class="colorable" data-id="box-center" x="-65" y="-30" width="130" height="60" rx="8" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                  <text x="0" y="7" text-anchor="middle" font-family="'Caveat', cursive" font-weight="bold" font-size="22" fill="#222">"Touch Base 🔄"</text>
+
+                  <rect class="colorable" data-id="box-right" x="90" y="-30" width="130" height="60" rx="8" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                  <text x="155" y="7" text-anchor="middle" font-family="'Caveat', cursive" font-weight="bold" font-size="22" fill="#222">"Sinergia Total ✨"</text>
+                </g>
+
+                <!-- Corazoncitos y estrellas para colorear -->
+                <polygon class="colorable" data-id="star-1" points="160,80 165,95 180,95 168,105 172,120 160,110 148,120 152,105 140,95 155,95" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                <polygon class="colorable" data-id="star-2" points="440,80 445,95 460,95 448,105 452,120 440,110 428,120 432,105 420,95 435,95" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+              </svg>
+
+              <!-- SVG 2: GATITO EN TEAMS -->
+              <svg id="svgDrawingGatito" class="interactive-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                <rect class="colorable" data-id="g-bg" x="15" y="15" width="570" height="470" rx="15" fill="#FAFAFA" stroke="#222" stroke-width="4"/>
+                <rect class="colorable" data-id="g-screen" x="50" y="40" width="500" height="300" rx="12" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                <!-- Ventana de videollamada -->
+                <rect class="colorable" data-id="g-header" x="50" y="40" width="500" height="40" rx="10" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                <circle class="colorable" data-id="btn-close" cx="75" cy="60" r="6" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+                <circle class="colorable" data-id="btn-min" cx="95" cy="60" r="6" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+                <circle class="colorable" data-id="btn-max" cx="115" cy="60" r="6" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+                <text x="300" y="66" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="14" font-weight="bold" fill="#222">Reunión de Emergencia Q4 (48 Participantes Mutados)</text>
+
+                <!-- Gato grande en la pantalla -->
+                <g transform="translate(300, 200)">
+                  <!-- Orejas -->
+                  <polygon class="colorable" data-id="ear-left" points="-80,-40 -110,-100 -40,-65" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <polygon class="colorable" data-id="ear-right" points="80,-40 110,-100 40,-65" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <polygon class="colorable" data-id="ear-in-l" points="-75,-45 -95,-85 -50,-62" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <polygon class="colorable" data-id="ear-in-r" points="75,-45 95,-85 50,-62" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <!-- Cabeza -->
+                  <ellipse class="colorable" data-id="cat-head" cx="0" cy="-20" rx="90" ry="75" fill="#FFFFFF" stroke="#222" stroke-width="4"/>
+                  <!-- Ojos grandes / Lentes -->
+                  <circle class="colorable" data-id="glass-l" cx="-35" cy="-25" r="28" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <circle class="colorable" data-id="glass-r" cx="35" cy="-25" r="28" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <line x1="-7" y1="-25" x2="7" y2="-25" stroke="#222" stroke-width="3.5"/>
+                  <!-- Pupilas -->
+                  <circle class="colorable" data-id="pupil-l" cx="-35" cy="-25" r="10" fill="#222"/>
+                  <circle class="colorable" data-id="pupil-r" cx="35" cy="-25" r="10" fill="#222"/>
+                  <!-- Nariz y bigotes -->
+                  <polygon class="colorable" data-id="cat-nose" points="-8,5 8,5 0,15" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+                  <path d="M-20,15 Q-50,10 -70,5 M-20,20 Q-50,25 -70,30" stroke="#222" stroke-width="2.5" fill="none"/>
+                  <path d="M20,15 Q50,10 70,5 M20,20 Q50,25 70,30" stroke="#222" stroke-width="2.5" fill="none"/>
+                  <!-- Corbata cómica -->
+                  <polygon class="colorable" data-id="tie-top" points="-15,50 15,50 20,65 -20,65" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                  <polygon class="colorable" data-id="tie-body" points="-20,65 20,65 25,120 0,145 -25,120" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                </g>
+
+                <!-- Barra inferior de la app de llamadas -->
+                <rect class="colorable" data-id="call-bar" x="180" y="295" width="240" height="35" rx="18" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                <circle class="colorable" data-id="mute-btn" cx="215" cy="312" r="12" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+                <circle class="colorable" data-id="cam-btn" cx="255" cy="312" r="12" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+                <circle class="colorable" data-id="hand-btn" cx="295" cy="312" r="12" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+                <rect class="colorable" data-id="leave-btn" x="330" y="302" width="70" height="20" rx="10" fill="#FFFFFF" stroke="#222" stroke-width="2"/>
+
+                <!-- Texto inferior -->
+                <text x="300" y="390" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="26" font-weight="900" fill="#222">"SÍ, TE ESCUCHO PERFECTO..."</text>
+                <text x="300" y="425" text-anchor="middle" font-family="'Caveat', cursive" font-size="24" font-weight="bold" fill="#555">(Fingiendo que no estoy en mute comiendo papitas)</text>
+              </svg>
+
+              <!-- SVG 3: GRÁFICO DE SINERGIAS -->
+              <svg id="svgDrawingSinergia" class="interactive-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                <rect class="colorable" data-id="s-bg" x="15" y="15" width="570" height="470" rx="15" fill="#FAFAFA" stroke="#222" stroke-width="4"/>
+                <text x="300" y="65" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="24" font-weight="800" fill="#222">DESGLOSE REAL DE TU TIEMPO EN REUNIONES</text>
+                
+                <!-- Pie Chart / Gráfico de Pastel -->
+                <g transform="translate(300, 230)">
+                  <!-- Rebanada 1 (50%): Desear estar en la cama -->
+                  <path class="colorable" data-id="pie-1" d="M 0 0 L 0 -130 A 130 130 0 0 1 130 0 Z" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <!-- Rebanada 2 (25%): Esperar que alguien comparta pantalla -->
+                  <path class="colorable" data-id="pie-2" d="M 0 0 L 130 0 A 130 130 0 0 1 0 130 Z" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <!-- Rebanada 3 (15%): "¿Me escuchan bien?" -->
+                  <path class="colorable" data-id="pie-3" d="M 0 0 L 0 130 A 130 130 0 0 1 -115 60 Z" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <!-- Rebanada 4 (10%): Trabajo real -->
+                  <path class="colorable" data-id="pie-4" d="M 0 0 L -115 60 A 130 130 0 0 1 0 -130 Z" fill="#FFFFFF" stroke="#222" stroke-width="3.5"/>
+                  <!-- Centro -->
+                  <circle class="colorable" data-id="pie-center" cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#222" stroke-width="3"/>
+                </g>
+
+                <!-- Leyenda de colores -->
+                <g transform="translate(60, 400)">
+                  <rect class="colorable" data-id="leg-box1" x="0" y="0" width="22" height="22" rx="4" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <text x="32" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#222">Pensar qué voy a almorzar (45%)</text>
+                  
+                  <rect class="colorable" data-id="leg-box2" x="270" y="0" width="22" height="22" rx="4" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <text x="302" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#222">"Estás en mute, Juan" (30%)</text>
+
+                  <rect class="colorable" data-id="leg-box3" x="0" y="40" width="22" height="22" rx="4" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <text x="32" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#222">Colorear este mandala (20%)</text>
+
+                  <rect class="colorable" data-id="leg-box4" x="270" y="40" width="22" height="22" rx="4" fill="#FFFFFF" stroke="#222" stroke-width="2.5"/>
+                  <text x="302" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#222">Aportar valor real a la empresa (5%)</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="canvas-footer-tip">
+          💡 <strong>Truco Pro:</strong> Si estás en Teams o Zoom y notas que tu jefe te mira, haz clic en "⌨️ Teclado" en los efectos de camuflaje mientras coloreas.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO DE LIBROS Y PACKS -->
+  <section class="products-section" id="catalogo">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">🛒 NUESTRA COLECCIÓN OFICIAL</span>
+        <h2 class="section-title">Elige tu Kit de Supervivencia</h2>
+        <p class="section-subtitle">
+          Disponibles en <strong>Descarga Inmediata (PDF para imprimir)</strong> o en <strong>Edición Física de Lujo</strong> con encuadernación de cuaderno de notas corporativo que despista a cualquier supervisor.
+        </p>
+
+        <!-- FILTROS DE CATEGORÍA -->
+        <div class="catalog-filter-tabs" id="catalogFilters">
+          <button class="filter-tab active" data-filter="all">Todos los Libros</button>
+          <button class="filter-tab" data-filter="digital">💻 Digital (PDF Imprimible)</button>
+          <button class="filter-tab" data-filter="fisico">📖 Edición Física (Papel 160g)</button>
+          <button class="filter-tab" data-filter="packs">🎁 Packs Ahorro</button>
+        </div>
+      </div>
+
+      <!-- GRID DE PRODUCTOS -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- PRODUCTO 1 -->
+        <article class="product-card" data-category="digital fisico">
+          <div class="card-badge-top">🔥 Bestseller</div>
+          <div class="card-spine-accent"></div>
+          <div class="card-cover-preview" style="--cover-accent:#FF6B81;">
+            <div class="cover-mini-mockup">
+              <span class="vol-tag">VOLUMEN 1</span>
+              <h4>PUDO HABER SIDO UN CORREO</h4>
+              <p>Mandalas de furia corporativa & tazas de café</p>
+              <div class="cover-icon-doodle">☕ ✉️ 🥱</div>
+            </div>
+            <button class="btn-quick-preview" data-book="correo">👁️ Ojear por dentro</button>
+          </div>
+
+          <div class="card-info">
+            <div class="card-rating">★★★★★ <span>(482 reseñas)</span></div>
+            <h3 class="product-title">Pudo Haber Sido un Correo: Mandalas Corporativos</h3>
+            <p class="product-desc">
+              50 diseños intrincados con frases pasivo-agresivas elegantes como "Conforme a mi correo anterior", "Quedo atento a tus amables comentarios" y "Saludos cordiales".
+            </p>
+            
+            <div class="format-toggle-group">
+              <label class="format-option">
+                <input type="radio" name="format-prod-1" value="pdf" checked>
+                <span class="format-box">
+                  <strong>PDF Imprimible</strong>
+                  <span class="fmt-price">$12.99</span>
+                </span>
+              </label>
+              <label class="format-option">
+                <input type="radio" name="format-prod-1" value="fisico">
+                <span class="format-box">
+                  <strong>Libro Físico</strong>
+                  <span class="fmt-price">$21.99</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="card-action-row">
+              <div class="price-display">
+                <span class="price-current" id="price-prod-1">$12.99</span>
+                <span class="price-old">$19.99</span>
+              </div>
+              <button class="btn btn-add-cart" data-id="prod-1" data-title="Pudo Haber Sido un Correo (Vol. 1)" data-price="12.99">
+                <span>Añadir al Carrito</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCTO 2 -->
+        <article class="product-card" data-category="digital fisico">
+          <div class="card-badge-top badge-teams">🎧 Nivel Zen</div>
+          <div class="card-spine-accent"></div>
+          <div class="card-cover-preview" style="--cover-accent:#5B5FDE;">
+            <div class="cover-mini-mockup">
+              <span class="vol-tag">VOLUMEN 2</span>
+              <h4>MUDO Y CON CÁMARA APAGADA</h4>
+              <p>Patrones geométricos de personas fingiendo mala conexión</p>
+              <div class="cover-icon-doodle">📶 🤫 💻</div>
+            </div>
+            <button class="btn-quick-preview" data-book="mute">👁️ Ojear por dentro</button>
+          </div>
+
+          <div class="card-info">
+            <div class="card-rating">★★★★★ <span>(319 reseñas)</span></div>
+            <h3 class="product-title">Mudo y con Cámara Apagada: El Arte del Camuflaje</h3>
+            <p class="product-desc">
+              Aprende a fluir con la reunión sin emitir un solo sonido. Incluye láminas de ondas de audio congeladas, fondos falsos de biblioteca y el botón de 'Mute' en 30 estilos barrocos.
+            </p>
+
+            <div class="format-toggle-group">
+              <label class="format-option">
+                <input type="radio" name="format-prod-2" value="pdf" checked>
+                <span class="format-box">
+                  <strong>PDF Imprimible</strong>
+                  <span class="fmt-price">$11.99</span>
+                </span>
+              </label>
+              <label class="format-option">
+                <input type="radio" name="format-prod-2" value="fisico">
+                <span class="format-box">
+                  <strong>Libro Físico</strong>
+                  <span class="fmt-price">$19.99</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="card-action-row">
+              <div class="price-display">
+                <span class="price-current" id="price-prod-2">$11.99</span>
+                <span class="price-old">$17.99</span>
+              </div>
+              <button class="btn btn-add-cart" data-id="prod-2" data-title="Mudo y con Cámara Apagada" data-price="11.99">
+                <span>Añadir al Carrito</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCTO 3 -->
+        <article class="product-card" data-category="digital fisico">
+          <div class="card-badge-top badge-humor">🦖 Bestiario</div>
+          <div class="card-spine-accent"></div>
+          <div class="card-cover-preview" style="--cover-accent:#FFA502;">
+            <div class="cover-mini-mockup">
+              <span class="vol-tag">VOLUMEN 3</span>
+              <h4>SINERGIAS & DISRUPCIONES</h4>
+              <p>Monstruos de oficina y jefes micromanagers para pintar</p>
+              <div class="cover-icon-doodle">👔 🐉 📑</div>
+            </div>
+            <button class="btn-quick-preview" data-book="bestiario">👁️ Ojear por dentro</button>
+          </div>
+
+          <div class="card-info">
+            <div class="card-rating">★★★★★ <span>(274 reseñas)</span></div>
+            <h3 class="product-title">Sinergias & Disrupciones: Bestiario de Oficina</h3>
+            <p class="product-desc">
+              Ilustraciones cómicas de arquetipos: el que pregunta "una última duda" a las 5:59 PM, el colega que responde "responder a todos", y el fanático de LinkedIn.
+            </p>
+
+            <div class="format-toggle-group">
+              <label class="format-option">
+                <input type="radio" name="format-prod-3" value="pdf" checked>
+                <span class="format-box">
+                  <strong>PDF Imprimible</strong>
+                  <span class="fmt-price">$13.50</span>
+                </span>
+              </label>
+              <label class="format-option">
+                <input type="radio" name="format-prod-3" value="fisico">
+                <span class="format-box">
+                  <strong>Libro Físico</strong>
+                  <span class="fmt-price">$22.50</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="card-action-row">
+              <div class="price-display">
+                <span class="price-current" id="price-prod-3">$13.50</span>
+                <span class="price-old">$20.00</span>
+              </div>
+              <button class="btn btn-add-cart" data-id="prod-3" data-title="Sinergias & Disrupciones: Bestiario" data-price="13.50">
+                <span>Añadir al Carrito</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCTO 4 (PACK AHORRO) -->
+        <article class="product-card featured-pack-card" data-category="packs fisico digital">
+          <div class="card-badge-top badge-pack">👑 Ahorro del 40%</div>
+          <div class="card-spine-accent"></div>
+          <div class="card-cover-preview" style="--cover-accent:#2ED573;">
+            <div class="cover-mini-mockup">
+              <span class="vol-tag">COMBO SUPREMO</span>
+              <h4>KIT COMPLETO DE SUPERVIVENCIA Q4</h4>
+              <p>Todos los 3 libros + 12 Marcadores camuflados como bolígrafos</p>
+              <div class="cover-icon-doodle">🎁 📦 🖍️</div>
+            </div>
+            <button class="btn-quick-preview" data-book="pack">👁️ Ver contenido del pack</button>
+          </div>
+
+          <div class="card-info">
+            <div class="card-rating">★★★★★ <span>(610 reseñas)</span></div>
+            <h3 class="product-title">Mega Pack "Oficina Blindada" (Edición Físico + PDF)</h3>
+            <p class="product-desc">
+              Incluye los 3 tomos impresos en papel premium de 160g, todas las descargas digitales de por vida, stickers anti-estrés para la laptop y set de 12 plumones discretos.
+            </p>
+
+            <ul class="pack-perks-list">
+              <li>✔ Los 3 libros físicos con portadas discretas</li>
+              <li>✔ Acceso vitalicio a descargas PDF</li>
+              <li>✔ Pack de 20 stickers corporativos irónicos</li>
+              <li>✔ Envío gratis con mensajería urgente</li>
+            </ul>
+
+            <div class="card-action-row">
+              <div class="price-display">
+                <span class="price-current">$44.90</span>
+                <span class="price-old">$75.00</span>
+              </div>
+              <button class="btn btn-add-cart highlight" data-id="prod-pack" data-title="Mega Pack Oficina Blindada (Completo)" data-price="44.90">
+                <span>Comprar Pack VIP</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA DE ABURRIMIENTO CORPORATIVO (ROI) -->
+  <section class="calculator-section" id="calculadora">
+    <div class="container">
+      <div class="calculator-card">
+        <div class="calc-header">
+          <span class="calc-tag">🧮 CALCULADORA CIENTÍFICA</span>
+          <h2 class="calc-title">¿Cuánto tiempo de tu vida estás perdiendo en reuniones?</h2>
+          <p class="calc-subtitle">Descubre cuántas obras maestras podrías haber pintado en lugar de escuchar a tu jefe hablar sobre "alinear sinergias".</p>
+        </div>
+
+        <div class="calc-grid">
+          <div class="calc-controls">
+            <div class="control-group">
+              <div class="control-label-row">
+                <label for="rangeHours">Horas de reuniones a la semana:</label>
+                <span class="control-val" id="valHours">12 hrs</span>
+              </div>
+              <input type="range" id="rangeHours" min="2" max="35" value="12" class="custom-slider">
+              <div class="range-marks">
+                <span>2 hrs (Paraíso)</span>
+                <span>15 hrs (Peligro)</span>
+                <span>35 hrs (Tortura)</span>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="control-label-row">
+                <label for="rangeBuzzwords">Veces que dicen "Alinear", "ASAP" o "Touch Base" al día:</label>
+                <span class="control-val" id="valBuzzwords">8 veces</span>
+              </div>
+              <input type="range" id="rangeBuzzwords" min="1" max="25" value="8" class="custom-slider">
+              <div class="range-marks">
+                <span>1 (Poco)</span>
+                <span>10 (Habitual)</span>
+                <span>25 (Socorro)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-results-box">
+            <div class="results-header">Diagnóstico de Cordura:</div>
+            <div class="big-metric-row">
+              <div class="metric-item">
+                <span class="metric-number" id="calcYearHours">624</span>
+                <span class="metric-label">Horas perdidas al año</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number" id="calcColorPages">156</span>
+                <span class="metric-label">Libros que podrías pintar</span>
+              </div>
+            </div>
+
+            <div class="diagnosis-pill" id="diagnosisPill">
+              ⚠️ Nivel de Peligro: <strong>Sobredosis Crítica de Sinergia</strong>
+            </div>
+
+            <p class="calc-recommendation" id="calcRecommendation">
+              "Tu cerebro está al 85% de capacidad de paciencia. La medicina prescrita por la OMS (Organización Mundial del Sarcasmo) es tener el libro <em>Pudo Haber Sido un Correo</em> permanentemente abierto en tu escritorio."
+            </p>
+
+            <button class="btn btn-primary btn-block" id="btnPrescriptionAddToCart">
+              🛒 Añadir Dosis Recomendada al Carrito ($12.99)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS Y RESEÑAS -->
+  <section class="testimonials-section" id="opiniones">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">🗣️ SOBREVIVIENTES REALES</span>
+        <h2 class="section-title">Lo que dicen quienes ya no sufren en Teams</h2>
+        <p class="section-subtitle">Personas reales que salvaron sus empleos y su paz mental gracias a nuestros mandalas.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Mi gerente me felicitó frente a todo el departamento porque pensó que estaba tomando apuntes meticulosos de su presentación de 80 diapositivas. En realidad terminé de pintar un unicornio pasivo-agresivo. 10 de 10."
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar">👩‍💼</div>
+            <div>
+              <strong class="author-name">Valeria S.</strong>
+              <span class="author-role">Project Manager (con cámara apagada)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "La textura del papel en la versión física es impresionante. Uso plumones de gel pesados y no se traspasa nada. Ahora hasta tengo ganas de que convoquen al 'Daily Scrum' para avanzar con mis láminas."
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar">👨‍💻</div>
+            <div>
+              <strong class="author-name">Carlos D.</strong>
+              <span class="author-role">Senior Full-Stack & Experto en 'Mute'</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Descargué la versión en PDF y la imprimí en la copiadora de recursos humanos. La ironía poética de usar su propio papel para colorear mandalas que dicen 'Pudo ser un correo' no tiene precio."
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar">🧑‍💼</div>
+            <div>
+              <strong class="author-name">Mateo R.</strong>
+              <span class="author-role">Analista Financiero Rebelde</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES (FAQ) -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="section-header text-center">
+        <span class="section-kicker">💡 DUDAS EXISTENCIALES</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>¿Se darán cuenta en Zoom o Teams de que estoy coloreando?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              ¡Para nada! Si tienes la cámara encendida, solo inclina la mirada hacia abajo con el ceño ligeramente fruncido. Para tu jefe, pareces un empleado modelo analizando a fondo las métricas de ingresos.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>¿Cómo recibo la versión digital (PDF)?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Inmediatamente después de completar tu compra, recibirás un enlace de descarga directa en pantalla y a tu correo. Viene listo en formato A4 y Carta para imprimir cuantas veces quieras.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>¿El empaque físico es discreto?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Absolutamente. Llega en un sobre marrón formal sellado que parece un informe contable aburrido o una auditoría de impuestos. Nadie en tu oficina sabrá lo que hay dentro.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>¿Qué es la tecla de emergencia 'ESC' o Modo Jefe?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              En cualquier momento en este sitio web puedes presionar la tecla <strong>ESC</strong> o el botón rojo superior. La pantalla se transformará al instante en una hoja de cálculo seria de Excel con fórmulas y gráficos para que nadie sospeche.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-cta-box">
+        <h3>¿Quieres una lámina gratis cada lunes a las 8:59 AM?</h3>
+        <p>Suscríbete a nuestro boletín "El Correo que Sí Vale la Pena". Te enviamos 1 mandala imprimible cada semana antes de tu primera junta.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="tu_correo_corporativo@empresa.com" required class="input-newsletter">
+          <button type="submit" class="btn btn-primary">¡Quiero mi Lámina Gratis!</button>
+        </form>
+        <span class="newsletter-disclaimer">🔒 Cero spam. Solo arte anti-burnout. Puedes cancelar cuando quieras.</span>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-legal">
+          <p>© 2026 ColoreaLaReunión™. Todos los derechos reservados.</p>
+          <small>Ningún gerente fue lastimado en la creación de estos libros (solo su orgullo). Hecho con cafeína y mucho sarcasmo.</small>
+        </div>
+        <div class="footer-links">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#simulador">Lienzo en Vivo</a>
+          <a href="#calculadora">Calculadora</a>
+          <a href="#" id="btnOpenPanicFooter">Hoja de Cálculo Falsa</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: OJEAR PÁGINAS POR DENTRO (PREVIEW FLIPBOOK) -->
+  <div class="modal-backdrop" id="previewModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card modal-preview-card">
+      <div class="modal-header">
+        <div>
+          <span class="modal-kicker">👁️ VISTA PREVIA EXCLUSIVA</span>
+          <h3 class="modal-title" id="previewBookTitle">Pudo Haber Sido un Correo (Vol. 1)</h3>
+        </div>
+        <button class="btn-close-modal" id="btnClosePreview" aria-label="Cerrar vista previa">✕</button>
+      </div>
+
+      <div class="preview-stage">
+        <button class="preview-nav-btn prev" id="btnPrevPage">‹</button>
+        
+        <div class="preview-page-viewport">
+          <div class="preview-sheet" id="previewSheetContent">
+            <!-- Página renderizada dinámicamente -->
+            <div class="sheet-illustration" id="sheetIllustrationArea">
+              <!-- Se actualiza con JS -->
+            </div>
+            <div class="sheet-caption" id="sheetCaptionText">
+              Página 7: "Mándalas de tazas de café humeantes con la frase 'Conforme a mi correo anterior'"
+            </div>
+          </div>
+          <div class="preview-pagination-dots" id="previewDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <button class="preview-nav-btn next" id="btnNextPage">›</button>
+      </div>
+
+      <div class="modal-footer-action">
+        <span class="modal-price-hint">Disponible en PDF ($12.99) y Libro Físico ($21.99)</span>
+        <button class="btn btn-primary" id="btnBuyFromPreview">Añadir este libro al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DRAWER: CARRITO DE COMPRAS LATERAL -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <h3>Tu Carrito Anti-Burnout</h3>
+        <span class="drawer-subtitle" id="cartItemsSubtitle">0 artículos seleccionados</span>
+      </div>
+      <button class="btn-close-drawer" id="btnCloseCart" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <!-- LISTA DE ARTÍCULOS -->
+    <div class="drawer-items-list" id="cartItemsContainer">
+      <div class="empty-cart-state" id="emptyCartMessage">
+        <div class="empty-icon">🛒</div>
+        <h4>Tu carrito está tan vacío como la agenda de esa reunión</h4>
+        <p>Elige un libro del catálogo o prueba una dosis recomendada para comenzar.</p>
+        <a href="#catalogo" class="btn btn-secondary btn-sm" id="btnBrowseFromEmpty">Ver Catálogo</a>
+      </div>
+    </div>
+
+    <!-- FOOTER DEL CARRITO: TOTALES Y CHECKOUT -->
+    <div class="drawer-footer" id="cartFooterSection">
+      <!-- CÓDIGO DE DESCUENTO -->
+      <div class="coupon-box">
+        <div class="coupon-input-wrap">
+          <input type="text" id="couponInput" placeholder="Código de descuento (ej. PUDOSERUNCORREO)" class="input-coupon" uppercase>
+          <button class="btn-apply-coupon" id="btnApplyCoupon">Aplicar</button>
+        </div>
+        <div class="coupon-msg" id="couponMessage"></div>
+      </div>
+
+      <div class="cart-summary-lines">
+        <div class="summary-line">
+          <span>Subtotal:</span>
+          <strong id="cartSubtotal">$0.00</strong>
+        </div>
+        <div class="summary-line discount-line" id="discountLineRow" style="display: none;">
+          <span>Descuento aplicado:</span>
+          <strong id="cartDiscount">-$0.00</strong>
+        </div>
+        <div class="summary-line total-line">
+          <span>Total a pagar:</span>
+          <strong class="total-big-number" id="cartTotal">$0.00</strong>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-block btn-checkout" id="btnCheckout">
+        <span>Proceder al Pago Seguro</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="secure-badges">
+        <span>🔒 Pago Encriptado 256-bit</span>
+        <span>⚡ Descarga Instantánea</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MODAL: CHECKOUT SIMULADO Y CONFIRMACIÓN -->
+  <div class="modal-backdrop" id="checkoutModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card modal-checkout-card">
+      <div class="modal-header">
+        <div>
+          <span class="modal-kicker">💳 FINALIZAR COMPRA</span>
+          <h3 class="modal-title">Tu Libertad Mental a un Paso</h3>
+        </div>
+        <button class="btn-close-modal" id="btnCloseCheckout">✕</button>
+      </div>
+
+      <div class="checkout-body" id="checkoutFormContent">
+        <div class="mock-payment-summary">
+          <span>Total de la orden:</span>
+          <strong id="checkoutTotalAmount">$0.00</strong>
+        </div>
+
+        <form id="fakeCheckoutForm" class="checkout-form">
+          <div class="form-group">
+            <label>Correo Electrónico (Para enviar tu PDF al instante):</label>
+            <input type="email" required placeholder="tu_correo@trabajo.com" class="form-control" value="empleado_estresado@corporativo.com">
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>Nombre en la tarjeta:</label>
+              <input type="text" required placeholder="Nombre Apellido" class="form-control" value="Sobreviviente de Zoom">
+            </div>
+            <div class="form-group">
+              <label>Número de Tarjeta (Simulado):</label>
+              <input type="text" required placeholder="•••• •••• •••• 4242" class="form-control" value="4532 •••• •••• 9821">
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>Vencimiento:</label>
+              <input type="text" placeholder="12/28" class="form-control" value="09/28">
+            </div>
+            <div class="form-group">
+              <label>CVC:</label>
+              <input type="text" placeholder="123" class="form-control" value="777">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-pay-now" id="btnPayNow">
+            ✨ Completar Orden y Descargar Mis Libros
+          </button>
+        </form>
+      </div>
+
+      <!-- PANTALLA DE ÉXITO TRAS PAGAR -->
+      <div class="checkout-success-view" id="checkoutSuccessView" style="display: none;">
+        <div class="success-icon-bounce">🎉</div>
+        <h3>¡Felicitaciones! Has salvado tu salud mental</h3>
+        <p>Tu orden ha sido confirmada con éxito. Ya puedes descargar tus láminas para colorear y comenzar a pintar en tu siguiente reunión.</p>
+        
+        <div class="fake-download-box">
+          <div class="file-icon">📄</div>
+          <div class="file-meta">
+            <strong>Paquete_Anti_Reuniones_Oficial_2026.pdf</strong>
+            <span>18.4 MB • 50 Páginas en Alta Resolución A4</span>
+          </div>
+          <button class="btn btn-secondary btn-sm" id="btnMockDownloadPdf">Descargar PDF</button>
+        </div>
+
+        <button class="btn btn-primary" id="btnFinishSuccess">Volver a la Tienda</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANTALLA DE PÁNICO: HOJA DE CÁLCULO FALSA DE EXCEL (MODO JEFE A LA VISTA) -->
+  <div class="excel-panic-screen" id="excelPanicScreen" aria-hidden="true">
+    <div class="excel-top-bar">
+      <div class="excel-title-bar">
+        <span class="excel-logo-box">X</span>
+        <span>Libro1_Auditoria_Presupuesto_Q4_Proyecciones_Fiscales.xlsx - Excel</span>
+      </div>
+      <div class="excel-panic-banner">
+        <span>👀 <strong>¡MODO JEFE ACTIVADO!</strong> Pareces una persona muy ocupada.</span>
+        <button class="btn-exit-panic" id="btnExitPanic">¡Ya se fue el jefe! Volver a colorear (ESC)</button>
+      </div>
+    </div>
+
+    <!-- CINTA DE OPCIONES EXCEL -->
+    <div class="excel-ribbon">
+      <div class="ribbon-tabs">
+        <span class="ribbon-tab active">Inicio</span>
+        <span class="ribbon-tab">Insertar</span>
+        <span class="ribbon-tab">Disposición de página</span>
+        <span class="ribbon-tab">Fórmulas</span>
+        <span class="ribbon-tab">Datos</span>
+        <span class="ribbon-tab">Revisar</span>
+        <span class="ribbon-tab">Vista</span>
+      </div>
+      <div class="ribbon-tools-row">
+        <span>Arial</span>
+        <span>10</span>
+        <strong>N</strong> <em>K</em> <u>S</u>
+        <span class="sep">|</span>
+        <span>=SUMA(C3:C45)*PROYECCION_ANUAL</span>
+      </div>
+    </div>
+
+    <!-- CUÍCULA DE DATOS REALISTAS -->
+    <div class="excel-sheet-viewport">
+      <table class="excel-grid-table">
+        <thead>
+          <tr>
+            <th class="col-header-corner"></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-index">1</td>
+            <td class="cell-bold cell-header">CENTRO DE COSTOS</td>
+            <td class="cell-bold cell-header">Q1 REAL</td>
+            <td class="cell-bold cell-header">Q2 PROYECTADO</td>
+            <td class="cell-bold cell-header">Q3 META</td>
+            <td class="cell-bold cell-header">Q4 CIERRE</td>
+            <td class="cell-bold cell-header">VAR %</td>
+            <td class="cell-bold cell-header">ESTADO SINERGIA</td>
+          </tr>
+          <tr>
+            <td class="row-index">2</td>
+            <td>Optimización de Procesos Cross-Functional</td>
+            <td>$ 142,500.00</td>
+            <td>$ 158,200.00</td>
+            <td>$ 170,000.00</td>
+            <td>$ 195,400.00</td>
+            <td>+14.2%</td>
+            <td class="cell-green">ALINEADO</td>
+          </tr>
+          <tr>
+            <td class="row-index">3</td>
+            <td>Implementación Framework Agilidad Escalada</td>
+            <td>$ 89,320.00</td>
+            <td>$ 92,100.00</td>
+            <td>$ 95,000.00</td>
+            <td>$ 104,200.00</td>
+            <td>+8.7%</td>
+            <td class="cell-green">EN CURSO</td>
+          </tr>
+          <tr>
+            <td class="row-index">4</td>
+            <td>Reducción de Puntos de Fricción Operativa</td>
+            <td>$ 45,000.00</td>
+            <td>$ 43,200.00</td>
+            <td>$ 40,000.00</td>
+            <td>$ 38,500.00</td>
+            <td>-12.0%</td>
+            <td class="cell-green">OPTIMIZADO</td>
+          </tr>
+          <tr>
+            <td class="row-index">5</td>
+            <td>Comité de Alineación de Objetivos OKR</td>
+            <td>$ 12,400.00</td>
+            <td>$ 18,900.00</td>
+            <td>$ 25,000.00</td>
+            <td>$ 31,000.00</td>
+            <td>+24.5%</td>
+            <td class="cell-yellow">REVISIÓN</td>
+          </tr>
+          <tr>
+            <td class="row-index">6</td>
+            <td>Tasa Interna de Retorno Estratégico (TIR)</td>
+            <td>18.4%</td>
+            <td>21.2%</td>
+            <td>22.5%</td>
+            <td>24.8%</td>
+            <td>+3.6%</td>
+            <td class="cell-green">SUPERADO</td>
+          </tr>
+          <tr>
+            <td class="row-index">7</td>
+            <td>Gasto en Café y Galletas de Reunión</td>
+            <td>$ 84,200.00</td>
+            <td>$ 96,500.00</td>
+            <td>$ 112,000.00</td>
+            <td>$ 145,000.00</td>
+            <td>+42.1%</td>
+            <td class="cell-red">CRÍTICO</td>
+          </tr>
+          <tr>
+            <td class="row-index">8</td>
+            <td><strong>TOTAL CONSOLIDADO EJECUTIVO</strong></td>
+            <td><strong>$ 373,420.00</strong></td>
+            <td><strong>$ 408,900.00</strong></td>
+            <td><strong>$ 442,000.00</strong></td>
+            <td><strong>$ 514,100.00</strong></td>
+            <td><strong>+16.4%</strong></td>
+            <td><strong>APROBADO</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- NOTIFICACIÓN TOAST FLOTANTE -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

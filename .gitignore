@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
